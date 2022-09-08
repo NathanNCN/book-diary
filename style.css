@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&family=Josefin+Sans:wght@600&display=swap');
+
+
+body {
+    background-color: grey;
+
+}
+body,p{
+    margin: 0;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #FFD700;
+    font-size: 25px;
+    border-bottom: solid 5px #FFD700;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+
+#addBooks {
+    all: unset;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    background-color: black;
+    color: #FFD700;
+    font-family: 'Anek Malayalam', sans-serif;
+    border: solid 5px #FFD700;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 10px;
+    
+}
+
+#addBooks:hover{
+    border: solid 5px green;
+    color: green;
+
+}
+
+.inputbox{
+    display: none;
+    position: fixed;
+    background: black;
+    border: solid 2px #FFD700;
+    width: 300px;
+    height: 400px;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,0);
+
+
+}
+
+.input{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+}
+.input input {
+    all: unset;
+    flex-basis: 80%;
+    border: solid 2px #FFD700;
+    background: white;
+
+
+}
+
+.input label{
+    margin-top: 15px;
+    margin-left: 10%;
+    flex-basis: 100%;
+}
+
+#submit{
+    margin-top: 40px;
+    width: 80%;
+    height: 50px;
+    margin-left: 30px;
+    border: solid 2px #FFD700;
+    background: grey;
+    color: #FFD700;
+    font-weight: 700;
+}
+
+#submit:hover{
+    border: solid 2px grey;
+    background: #FFD700;
+    color: grey;
+}
+
+.books{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 20px;
+    place-items: center;
+}
+
+
+.displayBook h1{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.book{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: #FFD700;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 30px;
+    margin: 15px;
+    border: solid 3px #FFD700;
+
+
+}
+
+.book p {
+    text-align: center;
+    width: 100%;
+}
+
+.book button{
+    margin: 0px;
+    all: unset;
+    width: 48%;
+    background: gold;
+    border-radius: 15px;
+    text-align: center;
+    color: black;
+}
+
+#sub {
+    background: red;
+}
+
+#isRead{
+    background: royalblue;
+}
